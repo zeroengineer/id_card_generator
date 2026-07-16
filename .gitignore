@@ -14,6 +14,7 @@ node_modules/
 dist/
 dist-ssr/
 build/
+ID CARDS/
 
 # Local env files
 .env
@@ -33,3 +34,6 @@ build/
 *.sw?
 thumbs.db
 .thumbnail/
+
+# Employee data & raw assets
+emp details/
