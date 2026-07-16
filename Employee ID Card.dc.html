@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #EDEDEB; }
+    a { color: #111111; text-decoration: none; }
+    a:hover { color: #555555; text-decoration: underline; }
+  </style>
+</helmet>
+
+<div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; gap: 72px; flex-wrap: wrap; padding: 64px 40px; font-family: 'Space Grotesk', sans-serif; box-sizing: border-box;">
+
+  <!-- ============ FRONT (638 × 1011) ============ -->
+  <div data-screen-label="Front" style="position: relative; width: 638px; height: 1011px; background: #FAFAF8; border-radius: 28px; box-shadow: 0 32px 64px rgba(0,0,0,0.18), 0 3px 8px rgba(0,0,0,0.10); overflow: hidden; display: flex; flex-direction: column; box-sizing: border-box;">
+
+    <!-- lanyard slot -->
+    <div style="position: absolute; top: 26px; left: 50%; transform: translateX(-50%); width: 120px; height: 16px; background: #EDEDEB; border-radius: 9px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.25); z-index: 2;"></div>
+
+    <!-- logo header -->
+    <div style="padding: 96px 48px 0 48px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+      <img src="uploads/company logo.png" alt="txtudio" style="height: 56px; display: block;">
+      <div style="margin-top: 12px; font-size: 17px; font-weight: 600; letter-spacing: 3.5px; color: #555555; text-transform: uppercase;">Coretech Private Limited</div>
+    </div>
+
+    <!-- photo + meta row -->
+    <div style="display: flex; gap: 28px; padding: 52px 48px 0 48px; align-items: stretch;">
+      <div style="width: 270px; height: 360px; flex-shrink: 0; background: #EDEDEB; border-radius: 20px; overflow: hidden;">
+        <img src="uploads/pasted-1784137543252-0.png" alt="Employee photo" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 28px;">
+        <div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 15px; letter-spacing: 2px; color: #767676; margin-bottom: 7px;">ID NUMBER</div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 26px; font-weight: 700; color: #111111;">EMP-0001</div>
+        </div>
+        <div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 15px; letter-spacing: 2px; color: #767676; margin-bottom: 7px;">DATE OF BIRTH</div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 23px; font-weight: 700; color: #111111;">{{ dob }}</div>
+        </div>
+        <div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 15px; letter-spacing: 2px; color: #767676; margin-bottom: 7px;">BLOOD GROUP</div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 23px; font-weight: 700; color: #111111;">{{ bloodGroup }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- name / role -->
+    <div style="padding: 52px 48px 0 48px;">
+      <div style="font-size: 44px; font-weight: 700; color: #111111; line-height: 1.15; text-wrap: balance;">Kiran Krishnakumar Subhashini</div>
+      <div style="margin-top: 16px; font-size: 22px; font-weight: 600; letter-spacing: 2px; color: #555555; text-transform: uppercase;">Chief Executive Officer</div>
+    </div>
+
+    <!-- dark bottom band with contact -->
+    <div style="margin-top: auto; background: #111111; padding: 32px 48px 38px 48px; display: flex; align-items: center;">
+      <div style="flex: 1.4;">
+        <div style="font-family: 'Space Mono', monospace; font-size: 15px; letter-spacing: 2px; color: #AFAFAF; margin-bottom: 8px;">EMAIL</div>
+        <div style="font-family: 'Space Mono', monospace; font-size: 20px; font-weight: 700; color: #FAFAF8; word-break: break-all;">{{ email }}</div>
+      </div>
+      <div style="width: 1px; align-self: stretch; background: #3A3A3A; margin: 0 28px;"></div>
+      <div style="flex: 1;">
+        <div style="font-family: 'Space Mono', monospace; font-size: 15px; letter-spacing: 2px; color: #AFAFAF; margin-bottom: 8px;">PHONE</div>
+        <div style="font-family: 'Space Mono', monospace; font-size: 20px; font-weight: 700; color: #FAFAF8;">{{ phone }}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BACK (638 × 1011) ============ -->
+  <div data-screen-label="Back" style="position: relative; width: 638px; height: 1011px; background: #FAFAF8; border-radius: 28px; box-shadow: 0 32px 64px rgba(0,0,0,0.18), 0 3px 8px rgba(0,0,0,0.10); overflow: hidden; display: flex; flex-direction: column; box-sizing: border-box;">
+
+    <!-- lanyard slot -->
+    <div style="position: absolute; top: 26px; left: 50%; transform: translateX(-50%); width: 120px; height: 16px; background: #EDEDEB; border-radius: 9px; box-shadow: inset 0 2px 4px rgba(0,0,0,0.25); z-index: 2;"></div>
+
+    <!-- dark header -->
+    <div style="background: #111111; padding: 104px 48px 44px 48px;">
+      <div style="font-size: 31px; font-weight: 700; color: #FAFAF8; line-height: 1.3; text-wrap: balance;">Building core technology you can trust.</div>
+    </div>
+
+    <!-- info rows -->
+    <div style="padding: 16px 48px 0 48px;">
+      <div style="display: flex; align-items: flex-start; gap: 18px; padding: 26px 0; border-bottom: 1px solid #E3E3E0;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><rect x="3" y="5" width="18" height="15" rx="2"></rect><path d="M3 9h18M8 5V3m8 2V3"></path></svg>
+        <div style="width: 130px; flex-shrink: 0; font-family: 'Space Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #767676; margin-top: 4px;">CIN</div>
+        <div style="font-family: 'Space Mono', monospace; font-size: 17px; font-weight: 700; color: #111111; line-height: 1.5;">U58200KL2025PTC098222</div>
+      </div>
+      <div style="display: flex; align-items: flex-start; gap: 18px; padding: 26px 0; border-bottom: 1px solid #E3E3E0;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+        <div style="width: 130px; flex-shrink: 0; font-family: 'Space Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #767676; margin-top: 4px;">REGISTERED<br>OFFICE</div>
+        <div style="font-size: 18px; color: #111111; line-height: 1.6;">First Floor, 69/1016, Manath Kandi Building, PM Kutty Road, East Nadakkave, Kozhikode, Kerala, India – 673006</div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 18px; padding: 26px 0; border-bottom: 1px solid #E3E3E0;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"></path></svg>
+        <div style="width: 130px; flex-shrink: 0; font-family: 'Space Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #767676;">WEBSITE</div>
+        <a href="https://txtudio.com" style="font-size: 19px; font-weight: 600;">txtudio.com</a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 18px; padding: 26px 0; border-bottom: 1px solid #E3E3E0;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+        <div style="width: 130px; flex-shrink: 0; font-family: 'Space Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #767676;">EMAIL</div>
+        <a href="mailto:business@snaptiqz.com" style="font-size: 19px; font-weight: 600;">business@snaptiqz.com</a>
+      </div>
+    </div>
+
+    <!-- notice -->
+    <div style="margin: 32px 48px 0 48px; background: #EDEDEB; border-radius: 20px; padding: 26px 30px;">
+      <div style="font-family: 'Space Mono', monospace; font-size: 14px; letter-spacing: 2px; color: #555555; margin-bottom: 10px;">NOTICE</div>
+      <div style="font-size: 17px; line-height: 1.6; color: #555555;">Property of TXTUDIO CORETECH PRIVATE LIMITED. If found, please return to the registered office or contact <a href="mailto:business@snaptiqz.com" style="font-size: 17px;">business@snaptiqz.com</a>. Unauthorized use is prohibited.</div>
+    </div>
+
+    <!-- dark footer -->
+    <div style="margin-top: auto; background: #111111; padding: 34px 48px; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <img src="uploads/company logo.png" alt="txtudio" style="height: 38px; display: block; filter: invert(1);">
+      <div style="font-size: 14px; font-weight: 600; letter-spacing: 3px; color: #9E9E9E; text-transform: uppercase;">Coretech Private Limited</div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;qrData&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;https://txtudio.com/verify/EMP-0001&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Card&quot;},
+  &quot;dob&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;01 Jan 1995&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Employee&quot;},
+  &quot;bloodGroup&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;O +ve&quot;, &quot;options&quot;: [&quot;A +ve&quot;, &quot;A -ve&quot;, &quot;B +ve&quot;, &quot;B -ve&quot;, &quot;AB +ve&quot;, &quot;AB -ve&quot;, &quot;O +ve&quot;, &quot;O -ve&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Employee&quot;},
+  &quot;email&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;kiran@txtudio.com&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Employee&quot;},
+  &quot;phone&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;+91 00000 00000&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Employee&quot;}
+}">
+class Component extends DCLogic {
+  renderVals() {
+    const verifyData = this.props.qrData ?? 'https://txtudio.com/verify/EMP-0001';
+    return {
+      qrUrl: 'https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=0&color=111111&bgcolor=FAFAF8&data=' + encodeURIComponent(verifyData),
+      dob: this.props.dob ?? '01 Jan 1995',
+      bloodGroup: this.props.bloodGroup ?? 'O +ve',
+      email: this.props.email ?? 'kiran@txtudio.com',
+      phone: this.props.phone ?? '+91 00000 00000',
+    };
+  }
+}
+</script>
+</body>
+</html>
